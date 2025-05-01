@@ -12,7 +12,7 @@ html, body{
 }
 .container{
     width:100%;
-    max-width: 1100px;
+    max-width: 1200px;
 }
 
 /* navbar style section start */
@@ -40,4 +40,24 @@ html, body{
     color: #007bff;
     text-decoration: none;
 }
+
+.nav-item .nav-link{
+    font-size: 15px;
+    font-weight: 700;
+    color: #472a1c;
+}
+.phone-number .website-link{
+    color: #472a1c;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    border: 1px solid #472a1c;
+    padding: 5px 10px;
+    border-radius: 35px;
+}
 /* navbar style section end */
+
+/* hero section style start */
+
+
+/* hero section style end */
