@@ -361,7 +361,21 @@ html, body{
   }
 
     /* pertner section end */
+
+
+
+
+
+
+
+
   
   /* footer section start */
 
+.footer-background{
+  background-color: #160c06;
+  color: rgb(226, 226, 226);
+  line-height: 35px;
+
+}
   /* footer section end */
