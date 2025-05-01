@@ -16,6 +16,30 @@ html, body{
 }
 
 /* navbar style section start */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: #000; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #000; 
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
 
 .sticky-navbar{
     position:fixed;
@@ -302,13 +326,31 @@ html, body{
     }
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 476px) {
     .custom-col-5 {
       flex: 0 0 100%;
       max-width: 100%;
+      
     }
   }
-
+  @media (max-width: 480px) {
+    .row.d-flex {
+      flex-direction: column !important;
+      align-items: center; 
+    }
+  
+    .custom-col-5 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: center; 
+    }
+  
+    .city-card {
+      width: 50%; 
+    }
+  }
+  
   .city-card {
     position: relative;
     overflow: hidden;
@@ -369,15 +411,45 @@ html, body{
       width: 100%;
     }
   }
-
+.partners-section{
+  position: relative;
+}
     /* pertner section end */
 
 
-
-
-
-
-
+    .mini-container {
+      position: absolute;
+      top: 90%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      z-index: 1;
+      padding: 1rem 2rem;
+      background-color: #f0f0f0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+    
+    /* Optional tighter spacing for text */
+    .mini-container h6 {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    
+    .mini-container p {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    
+.get-in-touch{
+  background-color: #ae612e;
+  padding: 8px 25px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 50px;
+}
 
   
   /* footer section start */
@@ -386,6 +458,23 @@ html, body{
   background-color: #160c06;
   color: rgb(226, 226, 226);
   line-height: 35px;
+  position: relative;
 
 }
+@media (max-width: 768px) {
+  .footer-background .row > div {
+    text-align: center;         
+    margin-bottom: 1.5rem;     
+  }
+
+  .footer-background ul {
+    padding-left: 0;            
+  }
+
+  .footer-background ul li {
+    display: inline-block;      
+    width: 100%;                
+  }
+}
+
   /* footer section end */
