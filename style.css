@@ -204,6 +204,59 @@ html, body{
     cursor: pointer;
   }
 
+  /* =============== */
+
+      /* counter section start */
+
+    /* counter section start */
+
+.stats-section {
+    background: url('./assets/image/rectangle_2_copy_3.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+  }
+
+  .stats-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* dark overlay for contrast */
+    z-index: 1;
+  }
+
+  .stats-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .stats-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 30px 20px;
+    color: #333;
+    height: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;      
+    text-align: center;  
+  }
+
+  .stats-card h3 {
+    font-weight: bold;
+    color: #c76c04;
+  }
+
+  @media (max-width: 767px) {
+    .stats-card {
+      margin-bottom: 20px;
+    }
+  }
+  /* counter section end */
+
+  /* Property in Popular Location */
+
   .info-section .dubai-info{
     color: #707070 !important;
     font-size: 16px;
@@ -255,9 +308,7 @@ html, body{
   }
 
   .city-card img {
-   
-    
-    border-radius: 12px;
+   border-radius: 12px;
   }
 
   .city-name {
@@ -269,3 +320,45 @@ html, body{
     font-size: 1rem;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
   }
+/* ================Property in Popular Location====== */
+
+
+
+   /* pertner section start */
+
+   .partner-box {
+    width: 15%; 
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* optional */
+  }
+  
+  .partner-logo {
+    max-height: 60px;
+    max-width: 100%;
+    object-fit: contain;
+    /* filter: grayscale(100%); */
+    /* transition: filter 0.3s ease; */
+  }
+  
+  .partner-logo:hover {
+    filter: none;
+  }
+  
+  @media (max-width: 768px) {
+    .partner-box {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .partner-box {
+      width: 100%;
+    }
+  }
+
+    /* pertner section end */
+  
